@@ -43,9 +43,9 @@ export default function RootPage({
         }
     }, [networkStatus.online]);
 
-    // useEffect(() => {
-    //     if (protect) dispatch(getInfo());
-    // }, [location]);
+    useEffect(() => {
+        if (protect) dispatch(getInfo());
+    }, [location]);
 
     const renderContent = () => {
         if (isRoute) {
